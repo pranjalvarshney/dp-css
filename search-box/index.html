@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<script>
+    $(document).ready(()=>{
+        $('.btn').click(()=>{
+            $('.input').toggleClass('active').focus().val("")
+            $('.btn').toggleClass('animate')
+        })
+    })
+</script>
+<body>
+    <div class="wrapper">
+        <div class="search-box">
+            <input type="text" placeholder="search here..." class="input">
+            <button class="btn"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+</body>
+</html>
