@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="company-name">
+        <img class="logo-header" src="logo.png" alt="">
+        <h1 class="">Ocean Learning</h1>    
+    </div>
+    <div class="wrapper">
+        <div class="payment">
+            <div class="content">
+                <h2>Payment Gateway</h2>
+                <h4>Your order</h4>
+                <table class="order-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Product</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Sample</td>
+                            <td>1</td>
+                            <td>4.99$</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Sample</td>
+                            <td>2</td>
+                            <td>9.99$</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Sample</td>
+                            <td>1</td>
+                            <td>12.99$</td>
+                        </tr>
+                        <tr>
+                            <td><b>Total</b></td>
+                            <td></td>
+                            <td></td>
+                            <td><b>27.97$</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="total-amount-div">
+                    <div class="promo-code">
+                        <label>Promo Code</label>
+                        <form>
+                            <input type="text" placeholder="xxxx-xxxxx-xxxx">
+                            <button>Apply</button>
+                        </form>
+                    </div>
+                    <div class="total-amount">
+                        <h3>Total payment</h3>
+                        <span>27.97 $</span>
+                    </div>
+                </div>
+                <div class="tnc-div">
+                    <form>
+                        <input type="checkbox">
+                        <label>I agree to the Terms and Conditions</label>
+                    </form>
+                </div>
+            </div>
+            <form class="form">
+                <h3 class="form-heading">Payment details</h3>
+                <div class="card space card-icon">
+                    <label for="" class="label">Card holder</label>
+                    <input type="text" class="input" name="card-holder" placeholder="enter">
+                    <i class="fa fa-user-circle-o"></i>
+                </div>
+                <div class="card space card-icon">
+                    <label for="" class="label">Card number</label>
+                    <input type="text" class="input" name="card-number" placeholder="enter">
+                    <i class="fa fa-credit-card-alt"></i>
+                </div>
+                <div class="card-group space">
+                    <div class="card-item card-icon">
+                        <label for="" class="label">Expiry date</label>
+                        <input type="text" class="input" name="expiry" placeholder=" 00/00 ">    
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    <div class="card-item card-icon">
+                        <label for="" class="label">CVV</label>
+                        <input type="text" class="input" name="cvv" placeholder="000">    
+                        <i class="fa fa-barcode"></i>
+                    </div>
+                </div>
+                <div class="row-submit">
+                    <div class="fa-group">
+                        <i class="fa fa-cc-amex"></i>
+                        <i class="fa fa-cc-visa"></i>
+                        <i class="fa fa-cc-diners-club"></i>
+                        <i class="fa fa-cc-mastercard"></i>
+                    </div>
+                    <button class="btn space">Pay Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
